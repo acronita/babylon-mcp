@@ -1,0 +1,37 @@
+{
+  "name": "babylon-mcp",
+  "version": "0.1.0",
+  "description": "Keeps the Babylon.js Editor's own MCP server on, so any agent (Claude Code, Codex...) can drive the editor, not only its AI Assistant panel.",
+  "keywords": [
+    "babylonjs",
+    "babylonjs-editor",
+    "mcp",
+    "claude-code",
+    "agents"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acronita/babylon-mcp.git"
+  },
+  "homepage": "https://github.com/acronita/babylon-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/acronita/babylon-mcp/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "babylon-mcp": "./src/server.mjs"
+  },
+  "exports": {
+    ".": "./src/server.mjs",
+    "./editor": "./editor/plugin.cjs"
+  },
+  "files": [
+    "src",
+    "editor"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
